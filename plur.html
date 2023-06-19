@@ -1,0 +1,47 @@
+<div id="demo"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script async src="https://cdn1.frocdn.ch/ozv4fOmPqDWx3wK.js"></script>
+<script>
+
+//pluralize.addPluralRule(/ex$/i, 'exidre')
+var dd =4;
+var a = pluralize('french',dd,);
+var b = pluralize("scenario",dd,);
+var fin = a+" "+b;
+var ret =pluralize("banc",'-12.42',{
+        showQty: true,
+        between: 'petit',
+        negativeReplace: 'une quantuité neget',
+        oneReplace: 'un',
+        severalReplace: ''})
+    document.getElementById("demo").innerHTML =
+//pluralize.plural('regex') //=> "regexes"
+
+pluralize("camoion blanc") + "<br>" +
+pluralize("she her",'true') + "<br>" +
+pluralize("banc",5) + "<br>" +
+pluralize("banc",true) + "<br>" +
+pluralize("banc",'true') + "<hr>" +
+
+pluralize("banc",'0') + "<br>" +
+pluralize("children",'false') + "<br>" +
+ret + "<br>" +
+pluralize("children",1) + "<br>" +
+pluralize("vice",false) + "<br>" +
+pluralize("banc",0) + "<hr>" +
+pluralize("banc",0.5) + "<hr>" +
+pluralize("deboléx",4) + "<hr>" +
+pluralize("advice",4) + "<hr>" +
+pluralize("vice",4) + "<hr>" +
+pluralize("children",2) + "<hr>" +
+
+pluralize(fin,2) //=> "regexii"
++
+    /* return plural form => guitars */
+    
+    "<br>" ;
+    /* return singular form => woman */
+
+</script>
